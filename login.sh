@@ -4,7 +4,6 @@ source login.creds
 
 function do_xf_login() {
 
-
     echo "Download start page..."
     HTML=$(curl -vs -c wificook -L "$LOGIN_CHECK_URL")
     echo "Done"
