@@ -1,8 +1,9 @@
 #!/bin/bash
 
+source login.creds
+
 function do_xf_login() {
 
-    source login.creds
 
     echo "Download start page..."
     HTML=$(curl -vs -c wificook -L "$LOGIN_CHECK_URL")
